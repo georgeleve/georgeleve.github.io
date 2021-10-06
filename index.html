@@ -1,243 +1,215 @@
 <!DOCTYPE html>
-<html>
-    <style>
-
-
-    </style>
-
+<html lang="en">
     <head>
-        <title>GeorgeLeveWebsite</title>
-        <script src="main.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>George Leve Portfolio website</title>
     </head>
-
     <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Personal Portfolio</a>
+                </div>
 
-        <form class="box" action="index.html" method="POST">
-            <h1>
-                login
-            </h1>
-            <input type="text" name="" placeholder="Enter Username" id="username">
-            <input type="password" name="" placeholder="Enter Password" id="password">
-            <input type="submit" name="" value="Login">
-        </form>
-        
-        <header>
-            <h1>This is a header</h1>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
         </header>
-        
-        <nav>
-            <h2>This is a navigation link:
-                <a href="/html/">click here</a>
-            </h2>
-        </nav>
 
-        <article>
-            <h3>This is a heading of an article</h3>
-            <section>This is a section of an article</section>
-        </article>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi, I' m <br> <span class="home__title-color">George Leventopoulos</span><br> 
+                        a Computer Science Student</h1>
 
-        <aside>
-            <h3>Another heading</h3>
-            <p>This is aside</p>
-        </aside>
+                    <a href="#contact" class="button">Contact</a>
+                    <a href="resume.pdf" class="button"  download>Download CV</a>
 
-        <footer>
-            <p>This is a footer<br>
-                <a href="mailto:hege@example.com">hege@example.com</a>
-            </p>
+
+
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/george-leventopoulos-787560145/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/georgeleve" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/perfil.png" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'm George</h2>
+                        <p class="about__text">
+                            My name is Georgios Gerasimos Leventopoulos.
+                            I' m a 4th year Computer Science Student at University of Crete.
+			    My interests are Data structures and Algorithms, Web Development and CyberSecurity.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Skills</h2>
+                        <p class="skills__text">Working on a variety of projects during the past years focused on data structures & algorithms.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name">Java</span>
+                            </div>
+                            <div class="skills__bar skills__java">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name">C / C++</span>
+                            </div>
+                            <div class="skills__bar skills__c">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name">Html CSS JavaScript</span>
+                            </div>
+                            <div class="skills__bar skills__htmlcssjs">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Personal Projects</h2>
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">You can find my projects on github:</h2>
+                        <p class="about__text"> -<a href="https://github.com/georgeleve/CS-252-SorryGame-MVC-Architecture">Sorry! </a> (the board game) using MVC </p>      
+                        <p class="about__text"> <a href="https://github.com/georgeleve/CS457-Introduction-to-Security-Systems/tree/main/csd4152_assign1">-Encryption Algorithms </a> implemented in C (Caesars, Affine, Feistel, Playfair cipher)</p>  
+                        <p class="about__text"> -A lightweight TCP implementation using UDP Transport Layer called <a href="https://github.com/georgeleve/335-Computer-Networks">"microTCP"</a></p>  
+                        <p class="about__text"> -<a href="https://github.com/georgeleve/CS-255-Software-Lab/tree/master/Exercise1">Translator</a> of Greek letters into English letters</p>
+                        <p class="about__text"> -C library <a href="https://github.com/georgeleve/CS-255-Software-Lab/tree/master/Exercise1"> string.h</a> built from scratch in C</p>       
+                    </div>       
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Find me on Social Media</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/georgleventopoulos/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/george.leve/?hl=el" class="footers__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/georgeleve00" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
         </footer>
-    
-        <div>
-            <h4>this is a div element</h4>
-        </div>
 
-        <h5>This is a ol element</h5>
-        <ol>
-            <li>Programming</li>
-            <li>Gym</li>
-            <li>Cooking</li>
-            <li>Coding</li>
-            <li>Crypto</li>
-        </ol>
-        
-        <h6>This is an unorder list element</h6>
-        <ul start="30">
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-        </ul>
 
-        <h1>This is my course catalogue</h1>
-        <table style="width:30%">
-            <tr>
-                <th>Course Title</th>
-                <th>Grade</th>
-                <th>Acad.Year</th>
-            </tr>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-            <tr>
-                <td>[CS-110] Calculus I</td>
-                <td>9.0</td>
-                <td>2018-19</td>
-            </tr>
-            <tr>
-                <td>[CS-111] Calculus II</td>
-                <td>8.0</td>
-                <td>2018-19</td>
-            </tr>
-            <tr>
-                <td>[CS-120] Digital Design</td>
-                <td>6.5</td>
-                <td>2018-19</td>
-            </tr>
-            <tr>
-                <td>[CS-118] Discrete Mathematics</td>
-                <td>5.5</td>
-                <td>2018-19</td>
-            </tr>
-            <tr>
-                <td>[CS-108] English I</td>
-                <td>5.0</td>
-                <td>2018-19</td>
-            </tr>
-            <tr>
-                <td>[CS-109] English II</td>
-                <td>5.0</td>
-                <td>2018-19</td>
-            </tr>
-            <tr>
-                <td>[CS-100] Introduction to Computer Science</td>
-                <td>7.5</td>
-                <td>2018-19</td>
-            </tr>
-
-            <tr>
-                <td>[CS-119] Linear Algebra</td>
-                <td>5.5</td>
-                <td>2018-19</td>
-            </tr>
-            <tr>
-                <td>[CS-112] Physics I</td>
-                <td>6.0</td>
-                <td>2018-19</td>
-            </tr>
-            <tr>
-                <td>[CS-150] Programming</td>
-                <td>7.0</td>
-                <td>2018-19</td>
-            </tr>
-            <tr>
-                <td>[CS-215] Applied Mathematics for Engineers</td>
-                <td>6.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-225] Computer Organization</td>
-                <td>5.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-240] Data Structures</td>
-                <td>6.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-208] English III</td>
-                <td>10.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-209] English IV</td>
-                <td>8.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-180] Logic</td>
-                <td>7.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-180] Logic</td>
-                <td>7.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-252] Object-Oriented Programming</td>
-                <td>8.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-217] Probability</td>
-                <td>6.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-255] Software Technology Laboratory</td>
-                <td>6.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-280] Theory of Computation</td>
-                <td>8.0</td>
-                <td>2019-20</td>
-            </tr>
-            <tr>
-                <td>[CS-380] Algorithms and Complexity Theory</td>
-                <td>5.0</td>
-                <td>2020-21</td>
-            </tr>
-            <tr>
-                <td>[CS-335] Computer Networks</td>
-                <td>5.5</td>
-                <td>2020-21</td>
-            </tr>
-            <tr>
-                <td>[CS-360] Files and Databases</td>
-                <td>6.5</td>
-                <td>2020-21</td>
-            </tr>
-            <tr>
-                <td>[CS-390.51] Introduction to Bioinformatics Programming with the
-                    Language R</td>
-                <td>8.5</td>
-                <td>2020-21</td>
-            </tr>
-            <tr>
-                <td>[CS-457] Introduction to Information Security Systems</td>
-                <td>5.0</td>
-                <td>2020-21</td>
-            </tr>
-            <tr>
-                <td>[CS-340] Languages and Compilers</td>
-                <td>6.5</td>
-                <td>2020-21</td>
-            </tr>
-            <tr>
-                <td>[CS-345] Operating Systems</td>
-                <td>6.5</td>
-                <td>2020-21</td>
-            </tr>
-        </table>
-
-        <h1>Visit my Univeristy webpage
-            <a href="https://www.csd.uoc.gr/CSD/index.jsp?lang=en">here!</a>
-        </h1>
-
-        <figure>
-            <img src="santorini.jpg" alt="Santorini" width="500" height="600">
-            <figcaption>This is a picture from Santorini, Greece.</figcaption>
-        </figure>
-
-        <h3>This is an audio file</h1>
-        <audio controls>
-            <source scr="rain.mp3" type="audio/mpeg">
-        </audio>
-
-        <h3>This is an video file</h1>
-        <video width="320" height="240" controls>
-            <source src="movie.mp4" type="video/mp4">
-        </video>
-
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
