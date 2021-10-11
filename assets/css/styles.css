@@ -9,7 +9,7 @@
 /*===== Colores =====*/
 :root{
   --first-color: #4070F4;
-  --second-color: #0E2431;
+  --second-color: #f0f5f8;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -343,7 +343,7 @@ img{
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: var(--second-color);
+  background-color: #000000;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -394,7 +394,7 @@ img{
     display: none;
   }
   .nav__link{
-    color: var(--second-color);
+    color: #4070F4;
   }
 
   .home{
