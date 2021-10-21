@@ -429,7 +429,7 @@ img{
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: #000000;
+  background-color: white;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -437,14 +437,17 @@ img{
 }
 .footer__title{
   font-size: 2rem;
+  color: #4070F4;
   margin-bottom: var(--mb-4);
 }
 .footer__social{
   margin-bottom: var(--mb-4);
+  font-size: 35px;
+  color: black;
 }
 .footer__icon{
   font-size: 1.5rem;
-  color: #fff;
+  color: black;
   margin: 0 var(--mb-2)
 }
 
