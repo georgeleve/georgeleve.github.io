@@ -31,6 +31,33 @@ body {
   justify-content: center;
   align-items: center;
 }
+body > div{
+  border:1px solid grey;
+}
+html, body, #container {
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+#container {
+  overflow:hidden;
+  position:relative;
+}
+#hideMe {
+  -webkit-animation: cssAnimation 5s forwards; 
+  animation: cssAnimation 5s forwards;
+}
+@keyframes cssAnimation {
+  0%   {opacity: 1;}
+  90%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+  0%   {opacity: 1;}
+  90%  {opacity: 1;}
+  100% {opacity: 0;}
+}
 .loader {
   display: inline-block;
   width: 30px;
