@@ -2,8 +2,13 @@
 <html lang="en">
     <style>
         body {
-            background-image: url('test3.jpg'); 
+            background-image: url('test2.jpg'); 
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
         }
+
         a:link {
             color: #4070F4;
             background-color: transparent;
@@ -40,6 +45,17 @@
         <title>George Leve Portfolio website</title>
     </head>
     <body>
+        <div class="content">
+            <img src="https://picsum.photos/300/300/?random" />
+          </div>
+          <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <script>
+            $(window).on("load",function(){
+              $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
 
         <!--===== HEADER =====-->
         <header class="l-header">
@@ -284,5 +300,8 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+
+
     </body>
 </html>
