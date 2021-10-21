@@ -317,6 +317,9 @@ img{
 .button:hover{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
+#cv, #contactbutton{
+  font-size: 25px;
+}
 
 /* ===== ABOUT =====*/
 .about__container{
@@ -501,6 +504,7 @@ img{
   .home__social-icon{
     margin-bottom: 0;
     margin-right: var(--mb-4);
+    font-size: 60px;
   }
   .home__img{
     width: 457px;
