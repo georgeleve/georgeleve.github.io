@@ -1,291 +1,195 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        body {
-            background-image: url('background.jpg'); 
-            height: 100%;
-            width: 100%;
-            background-position: center;
-            background-size: cover;
-        }
+<head>
+<title>Georgios Gerasimos Leventopoulos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        a:link {
-            color: #4070F4;
-            background-color: transparent;
-            text-decoration: none;
-        }
-        a:visited {
-            color: #4070F4;
-            background-color: transparent;
-            text-decoration: none;
-        }
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100%;
+}
 
-        a:hover {
-            color: rgb(131, 199, 255);
-            background-color: transparent;
-            text-decoration: underline;
-        }
+html {
+  height: 100%;
+}
 
-        a:active {
-            color: rgb(131, 199, 255);
-            background-color: transparent;
-            text-decoration: underline;
-        }
-    </style>
+.main a:link {
+  color: #b26f16;
+  background-color: transparent;
+  text-decoration: none;
+}
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+.main a:visited {
+  color: #c9bcbc;
+  background-color: transparent;
+  text-decoration: none;
+}
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+.main a:hover {
+  color: #b26f16;
+  background-color: transparent;
+  text-decoration: underline;
+  text-shadow: 0 0 0.3px #8c1515; 
+}
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+h3{
+  margin: 0em; 
+}
 
-        <title>George Leve Portfolio website</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Personal Portfolio</a>
-                </div>
+p{
+  margin: 0em; 
+  font-family: sans-serif;
+  #font-size: 95%;
+  margin-bottom:0.2em
+}
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
-                        <li class="nav__item"><a href="https://github.com/georgeleve" class="nav__link">GitHub</a></li>
-                    </ul>
-                </div>
+div-me {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <br><br><br><h1 class="home__title">Hi, I' m <br> <span class="home__title-color">George Leventopoulos
-                    </span> <img src="image.jpg" alt="Resume Picture" width="200"  height="500" />
-                        a Computer Science graduate from the <a href="https://www.csd.uoc.gr/CSD/index.jsp?lang=en">University of Crete</a> & 
-                        <a href="https://www.tuni.fi/fi">Tampere University</a> and Software Testing Engineer at <a href="https://www.nokia.com/fi_fi/">Nokia</a></a>
-                    </h1>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-                    <a href="#contact" class="button" id="contactbutton">Contact</a>
-                    <a href="resume1.pdf" class="button" id="cv"  download>Download CV</a>
-                </div>
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/george-leventopoulos/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/georgeleve" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #aea0a0;
+}
 
-                <div class="home__img">    
-                    <img src="assets/img/perfil.png" alt="">
-                </div>
-            </section>
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'm George</h2>
-                        <p class="about__text">
-                            My name is Georgios Gerasimos Leventopoulos.
-                            I' m a 4th year Computer Science Student at <a href="https://www.csd.uoc.gr/CSD/index.jsp?lang=en">University of Crete</a>.
-                            During my undergraduate studies, I am also working part-time as a Research Assistant in the Institute of Computer Science at <a href="https://www.forth.gr/">FORTH</a>.
-                             I like to build cool things using coding.
-			                My interests are Web Development (Front-end & Back-end), Web Automation, CyberSecurity, Android Development, Data Structures, Algorithms.</p>           
-                    </div>                                   
-                </div>
-            </section>
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Skills</h2>
-                        <p class="skills__text">Working on a variety of projects during the past years focused on Computer Science Fundamentals. 
-                            (Data Structures & Algorithms, Web Development, Database Managment, Compilers, Security Systems).
-                        </p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                
-                                <span class="skills__name">Java</span>
-                            </div>
-                            <div class="skills__bar skills__java">
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  #height: 100vh;
+  #height: 100%;
+}
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f6f3e5;
+  padding: 30px;
+  text-align: center;
+}
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                
-                                <span class="skills__name">C / C++</span>
-                            </div>
-                            <div class="skills__bar skills__c">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                
-                                <span class="skills__name">Python</span>
-                            </div>
-                            <div class="skills__bar skills__python">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                
-                                <span class="skills__name">HTML/CSS/JavaScript</span>
-                            </div>
-                            <div class="skills__bar skills__htmlcssjs">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Personal Projects</h2>
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">You can find my projects on<a href=" https://github.com/georgeleve"> <span style="color: rgb(132, 216, 255)"> <b>GitHub</b></span> </a>:</h2>
-                        <p class="about__text"> <b>-></b><a href="https://github.com/georgeleve/CS-252-SorryGame-MVC-Architecture"><span style="color: rgb(132, 216, 255)"> <b>Sorry</b></span> </a> (the board game) using MVC principles</p>      
-                        <p class="about__text"> <b>-></b><a href="https://github.com/georgeleve/CS457-Introduction-to-Security-Systems"><span style="color: rgb(132, 216, 255)"> <b>Encryption Algorithms</b></span> </a> implemented in C (Caesars, Affine, Feistel, Playfair cipher)</p>  
-                        <p class="about__text"> <b>-></b><a href="https://github.com/georgeleve/335-Computer-Networks/tree/main/microTCP"> <span style="color: rgb(132, 216, 255)"> <b>microTCP: </b></span></a> A lightweight TCP implementation using UDP Transport Layer</p>  
-                        <p class="about__text"> <b>-></b><a href="https://github.com/georgeleve/CS-255-Software-Lab/tree/master/Exercise1"><span style="color: rgb(132, 216, 255)"> <b>Translator </b></span></a> of Greek letters into English letters</p>
-                        <p class="about__text"> <b>-></b>C library <a href="https://github.com/georgeleve/CS-255-Software-Lab/tree/master/Exercise2"><span style="color: rgb(132, 216, 255)"> <b>string.h: </b></span></a> </a> built from scratch</p>       
-                        <p class="about__text"> <b>-></b>Basic<a href="https://github.com/georgeleve/CS-345-Operating-Systems/tree/main/assignment1"> <span style="color: rgb(132, 216, 255)"> <b>Linux Shell </b></span></a></a> implementation in C</p>   
-                        <p class="about__text"> <b>-></b><a href="https://github.com/georgeleve/CS-345-Operating-Systems/tree/main/assignment2"><span style="color: rgb(132, 216, 255)"> <b>Threads and Semaphores </b></span></a></a> during Operating Systems course</p>
-                        <p class="about__text"> <b>-></b><a href="https://github.com/georgeleve/CS-240-Data-Structures/tree/master"><span style="color: rgb(132, 216, 255)"> <b> Data Structures</b></span></a></a> Project in C</p>
-                        <p class="about__text"> <b>-></b><a href="https://github.com/georgeleve/CS-225-Computer-Organisation"><span style="color: rgb(132, 216, 255)"> <b>Linked List </b></span></a>  </a> implementation in Assembly</p>
-                    </div>       
-                </div>
-            </section>
-
-            <!--===== CONTACT  =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    
-                    <!-- modify this form HTML and place wherever you want your form -->
-
-                    <form action="https://formspree.io/f/xknkepkd" method="POST" class="contact__form">
-                        <input type="email" name="_replyto" placeholder="Your email:" class="contact__input">
-                        <textarea name="message" placeholder="Your message:" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="submit" value="Send" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-
-            <section class="about section " id="blog">
-                <h2 class="section-title">Blog</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">What I learned in my freshman year as a Computer Science student: </h2>
-                        <p class="about__text">
-                            <p>In my freshman year I learned a lot of CS fundamentals (also a lot of Math). Specifically:  
-                            <p>In my 1st semester I took C, Calculus I, Physics, Digital Design and English I. </p><br>
-                            <p>In <b>English I</b> we analyse papers that were related to Computer Science fundamentals and we learned related vocabulary.</p><br>
-                            In <b>C</b> Programming Language, we did a lot of exercises such as Hangman, TicTacToe, how to handle files and we also Memory Managment.
-                            <br><br><b>Digital Design</b> has an introduction to Computer Hardware, and there we learned Computer harware fundamentals such as
-                            Assembly language, Processor implementation, Pipelining, Memory System, Peripheral, RISC-V.<br>
-                            <br>In <b>Calculus I</b> we saw integrals and functions.<br><br>
-                            <p><b>Physics</b> was all about mechanics, oscillation & mechanical waves and electromagnetism.</p><br>
-                            <p> In my 2nd semester I had C++, Linear Algebra, Calculus II, Discrete Maths and English II. </p><br>
-                            
-                            <p>In <b>C++</b> we learned about classes, objects and Object Oriented Programming in general, Inheritance and Recursion.</p><br>
-                            <p><b>Calculus II</b> was the continue course of Calculus I.</p><br>
-                            <p><b>Discrete Maths</b>: You can find more information here: http://users.ics.forth.gr/~argyros/cs118.html</p><br>
-                            <p><b>English II</b> was the same thing as we did in English I.</p><br>
-
-                            </p>
-                        </p>           
-                    </div>                                   
-                </div>
-            </section>
-
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Find me on Social Media</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/georgleventopoulos/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/george.leve/?hl=el" class="footers__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://twitter.com/georgeleve00" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-        </footer>
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 100px;
+}
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+/* Footer */
+.footer {
+  padding: 15px;
+  background: #8c1515;
+  box-shadow: 0 50vh 0 50vh #8c1515;
+  #display: none;
+}
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
 
-    </body>
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#me">Home</a>
+  <a href="#pub">Publication</a>
+  <a href="#intern">Work Experience</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Georgios Gerasimos Leventopoulos</h2>
+      <img src="photo.jpeg" height="200px" class="center">
+    <br>
+    <h3>Contact:</h3>
+    <p>@gmail.com</center></p>
+  </div>
+  <div class="main">
+    <div id="me">
+      <h2>About Me</h2>
+      <p>I'm a PhD student in Electrical Engineering at <a href="https://www.stanford.edu/">Stony Brook University</a>, advised by Professor ?? <a href="???"> ?????????</a>. My research work has been ??????????????. I am a recipient of <a href="https://www.microsoft.com/en-us/research/academic-program/dissertation-grant/#!grant-recipients">the 2</a> and the  Electrical Engineering Department Fellowship.</p> 
+      <br>
+      <p>Before starting my PhD, I graduated with a Bachelor of Science degree in Computer Science from the<a href="https://www.uoc.gr/">University of Crete</a> in 2022. At the University of Crete, I worked with Professor <a href="https://????????">Sotiris Ioanndis</a> on Security.</p>
+      <br>
+    </div>
+
+    <div id="pub">
+    <h2>Publication</h2>
+      <a href="soon.pdf"><b><p>Title</p></b></a>
+      <p><b>????????</b>????</p>
+      <p><em>???????????????????</em></p>
+      <br>
+    </div>
+
+    <div id="intern">
+      <h2>Industry Experience</h2>
+      <p><b>Internship at Nokia</b> (Summer-Fall 2020, Summer 2021)</p>
+      <p>Mentors: </p>
+      <br>
+      <p><b>Internship at FORTH</b> (Summer 2018, Summer 2019)</p>
+      <p>Mentor: </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+</div>
+
+</body>
 </html>
