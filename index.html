@@ -4,6 +4,7 @@
 <title>Georgios (Gerasimos) Leventopoulos</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -21,19 +22,19 @@ html {
 }
 
 .main a:link {
-  color: #f4f2f1;
+  color: #1565c0;
   background-color: transparent;
   text-decoration: none;
 }
 
 .main a:visited {
-  color: #c9bcbc;
+  color: #1565c0;
   background-color: transparent;
   text-decoration: none;
 }
 
 .main a:hover {
-  color: #edebe7;
+  color: #1565c0;
   background-color: transparent;
   text-decoration: underline;
   text-shadow: 0 0 0.3px #faf9f9; 
@@ -71,7 +72,7 @@ div-me {
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -84,8 +85,8 @@ div-me {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #1565c0;
+  color: rgb(255, 255, 255);
 }
 
 /* Column container */
@@ -103,24 +104,24 @@ div-me {
 .side {
   -ms-flex: 20%; /* IE10 */
   flex: 20%;
-  background-color: #f6f3e5;
+  background-color: #c4bfbf;
   padding: 30px;
   text-align: center;
 }
 
 /* Main column */
-.main {   
+.main {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: white;
+  background-color: rgb(254, 254, 254);
   padding: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 /* Footer */
 .footer {
   padding: 15px;
-  background: #dac8c8;
+  background: #f9f5f5;
   box-shadow: 0 50vh 0 50vh #dac8c8;
   #display: none;
 }
@@ -140,6 +141,37 @@ div-me {
     width: 100%;
   }
 }
+
+.fa {
+  padding: 20px;
+  font-size: 44px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 70%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: rgb(0, 0, 0);
+}
+
+.fa-github {
+  background: #0b0b0b;
+  color: rgb(0, 0, 0);
+}
+
+
 </style>
 </head>
 <body>
@@ -157,16 +189,15 @@ div-me {
   <div class="side">
     <h2>Georgios Gerasimos Leventopoulos</h2>
       <img src="image.jpg" height="200px" class="center"><br>
-      <img src="stonybrook.jpg" height="68px" class="center">
+      <img src="stonybrook.png" height="68px" class="center">
     <br>
   </div>
   <div class="main">
     <div id="about">
       <h2>About Me</h2>
       <p>I will be a Ph.D. student in Computer Science at <a href="https://www.stonybrook.edu/">Stony Brook University</a>, in the Fall of 2023.</p>
-      <p>My research interests include System & Web Security, Malware and Machine Learning.</p>
-      <br>
-      <p>Before starting my PhD, I graduated with a Bachelor's Degree in Computer Science from the <a href="https://csd.uoc.gr/">University of Crete</a> in 2022 (Heraklion, Greece).
+      <p>My research interests include System Security, Web Security, Malware and Machine Learning.
+        Before starting my PhD, I graduated with a Bachelor's Degree in Computer Science from the <a href="https://csd.uoc.gr/">University of Crete</a> in 2022 (Heraklion, Greece).
         At the University of Crete, I worked with Professors: Sotiris Ioanndis, Polivios Pratikakis and Yannis Tzitzikas for my Bachelor's Thesis.
         I also participated in the Erasmus+ program as an exchange student for one semester at <a href="https://www.tuni.fi/en">Tampere University</a> in (Tampere, Finland).</p> 
       <br>
@@ -181,8 +212,8 @@ div-me {
 
     <div id="work">
       <h2>Work Experience</h2>
-      <p><b>Software Testing Engineer at <a href="https://www.nokia.com/">Nokia</a></b> (June 2022 - Present) Espoo, Finland</p><br>
-      <p><b>Undergraduate Research Assistant at <a href="https://www.ics.forth.gr/discs/">ICS-FORTH</a></b> (June 2020 - June 2022) Heraklion, Crete</p><br>
+      <p>Software Testing Engineer at <a href="https://www.nokia.com/">Nokia</a> (June 2022 - Present) Espoo, Finland</p><br>
+      <p>Undergraduate Research Assistant at <a href="https://www.ics.forth.gr/discs/">ICS-FORTH</a> (June 2020 - June 2022) Heraklion, Crete</p><br>
     </div>
 
     <div id="courses">
@@ -197,10 +228,11 @@ div-me {
       <p><b>leventopoulos <i>[dot]</i> george <i>[at]</i> gmail <i>[dot]</i> com</b></p>
       <p><b>georgios <i>[dot]</i> leventopoulos <i>[at]</i> stonybrook <i>[dot]</i> edu</b></p>
       <p><b>Helsinki, Finland</b></p><br>
-      <a href="https://www.linkedin.com/in/george-leventopoulos/">LinkedIn</a><br>
-      <a href="https://scholar.google.com/citations?user=Ump3El0AAAAJ&hl=en">Google Scholar</a><br>
-      <a href="https://github.com/georgeleve">GitHub</a><br>
-      <a href="https://twitter.com/georgeleve00">Twitter</a>
+      <a href="https://github.com/georgeleve" class="fa fa-github"></a>
+      <a href="https://www.linkedin.com/in/george-leventopoulos/" class="fa fa-linkedin"></a>
+      <a href="https://twitter.com/georgeleve00" class="fa fa-twitter"></a>
+      <a href="https://scholar.google.com/citations?user=Ump3El0AAAAJ&hl=en"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiMxZTg4ZTUiIGQ9Ik0yNCw0QzEyLjk1NCw0LDQsMTIuOTU0LDQsMjRzOC45NTQsMjAsMjAsMjBzMjAtOC45NTQsMjAtMjBTMzUuMDQ2LDQsMjQsNHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMTU2NWMwIiBkPSJNMzUsMTYuNTkydi0zLjg3OEwzNywxMUgyN2wwLjkxNywxLjgzM2MtMS4yMzYsMC0yLjI2NSwwLTIuMjY1LDBTMTkuMDk1LDEzLDE5LjA5NSwxOC43NDgJYzAsNS43NTIsNS43MzIsNS4wODgsNS43MzIsNS4wODhzMCwwLjg2NSwwLDEuNDUzYzAsMC41OTQsMC43NywwLjM5MSwwLjg2NCwxLjU4M2MtMC4zODgsMC03Ljk2NC0wLjIwOC03Ljk2NCw0Ljk5OAlzNi42NzksNC45NTksNi42NzksNC45NTlzNy43MjIsMC4zNjUsNy43MjItNi4xMDRjMC0zLjg3MS00LjQwNS01LjEyMS00LjQwNS02LjY4NmMwLTEuNTYzLDMuMzE5LTIuMDEyLDMuMzE5LTUuNjg0CWMwLTAuODIzLTAuMDI4LTEuNTI0LTAuMTQ5LTIuMTJMMzQsMTMuNTcxdjMuMDJjLTAuNTgxLDAuMjA3LTEsMC43NTYtMSwxLjQwOHY0LjVjMCwwLjgyOSwwLjY3MiwxLjUsMS41LDEuNXMxLjUtMC42NzEsMS41LTEuNVYxOAlDMzYsMTcuMzQ4LDM1LjU4MSwxNi43OTksMzUsMTYuNTkyeiBNMzAuMDQ3LDMxLjE2OWMwLjEzMSwyLjAyNC0xLjkyOSwzLjgxMS00LjYwMywzLjk5OGMtMi42NzEsMC4xODgtNC45NDYtMS4yOTUtNS4wNzctMy4zMTYJYy0wLjEzMy0yLjAxNiwxLjkyNy0zLjgwNSw0LjYtMy45OTZDMjcuNjQxLDI3LjY2NywyOS45MTQsMjkuMTUyLDMwLjA0NywzMS4xNjl6IE0yNi4xMDksMjIuNDUzCWMtMS41OTIsMC40NTEtMy4zNzUtMS4wNjItMy45ODItMy4zNjdjLTAuNjA0LTIuMzEyLDAuMTk1LTQuNTQzLDEuNzg2LTQuOTkyYzEuNTkzLTAuNDUzLDMuMzc0LDEuMDU5LDMuOTgxLDMuMzY3CUMyOC40OTksMTkuNzcsMjcuNzAyLDIyLjAwNCwyNi4xMDksMjIuNDUzeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNlOGVhZjYiIGQ9Ik0zNCwxNi41OTJWMTJjMC0wLjA1MS0wLjAxNS0wLjA5Ny0wLjAyOS0wLjE0M0wzNSwxMUgyMWwtOSw4aDUuMzgzCWMwLjE3NCw1LjQ2Niw1LjcxNSw0LjgzNiw1LjcxNSw0LjgzNnMwLDAuODY1LDAsMS40NTNjMCwwLjU5NCwwLjc3MSwwLjM5MSwwLjg2NSwxLjU4M2MtMC4zODgsMC03Ljk2NC0wLjIwOC03Ljk2NCw0Ljk5OAlzNi42NzksNC45NTksNi42NzksNC45NTlzNy43MjEsMC4zNjUsNy43MjEtNi4xMDRjMC0zLjg3MS00LjQwNC01LjEyMS00LjQwNC02LjY4NmMwLTEuNTYzLDMuMzE4LTIuMDEyLDMuMzE4LTUuNjg0CWMwLTAuOTcxLTAuMDQ3LTEuNzYzLTAuMjMyLTIuNDIyTDMzLDEyLjY2N3YzLjkyNWMtMC41ODEsMC4yMDctMSwwLjc1Ni0xLDEuNDA4djQuNWMwLDAuODI5LDAuNjcyLDEuNSwxLjUsMS41czEuNS0wLjY3MSwxLjUtMS41CVYxOEMzNSwxNy4zNDgsMzQuNTgxLDE2Ljc5OSwzNCwxNi41OTJ6IE0yOC4zMTksMzEuMTY5YzAuMTMxLDIuMDI0LTEuOTI4LDMuODExLTQuNjAyLDMuOTk4Yy0yLjY3MSwwLjE4OC00Ljk0Ni0xLjI5NS01LjA3Ny0zLjMxNgljLTAuMTMzLTIuMDE2LDEuOTI3LTMuODA1LDQuNTk5LTMuOTk2QzI1LjkxNCwyNy42NjcsMjguMTg3LDI5LjE1MiwyOC4zMTksMzEuMTY5eiBNMjQuMzgsMjIuNDUzCWMtMS41OTEsMC40NTEtMy4zNzMtMS4wNjItMy45ODEtMy4zNjdjLTAuNjA0LTIuMzEyLDAuMTk0LTQuNTQzLDEuNzg1LTQuOTkyYzEuNTkzLTAuNDUzLDMuMzc0LDEuMDU5LDMuOTgyLDMuMzY3CUMyNi43NywxOS43NywyNS45NzMsMjIuMDA0LDI0LjM4LDIyLjQ1M3oiPjwvcGF0aD4KPC9zdmc+"/>
+      </a>
     </div>
   </div>
 </div>
